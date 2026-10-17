@@ -3,77 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <style>
-        /* Basic styling for the website */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 10px;
-        }
-        nav li {
-            list-style: none;
-        }
-        nav li a {
-            text-decoration: none;
-        }
-        nav li a:hover {
-            background-color: #222;
-        }
-        main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .content {
-            text-align: center;
-        }
-        .footer {
-            background-color: #333;
-            cary: #fff;
-            padding: 20px 0;
-        }
-    </style>
+    <title>Piotr Henryk Siwy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My Personal Website</h1>
         <nav>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </nav>
     </header>
     <main>
         <div class="content">
-            <h2>About Me</h2>
-            <p>Welcome to my personal website. I am a specialized web developer specializing in web design and development. I am designed to help you create the best website possible for any project, whether it's a personal blog, a portfolio, or a company site. Whether you are creating a website for yourself, a business, or a client, I am here to assist you with all your web development needs.</p>
-            <h2>Services</h2>
-            <p>I offer a range of web development services, including web design, web development, web development, web development, web development, web development, web development.</p>
-            <h2>Contact Me</h2>
-            <p>Email: support@example.com</p>
-            <p>Phone: +1-123-456-7890</p>
+            <section class="hero">
+                <figure class="hero-photo">
+                    <img src="mugshot.jpeg" alt="Piotr, laughing, 2026" class="avatar">
+                    <figcaption>Piotr, laughing, 2026</figcaption>
+                </figure>
+                <div class="hero-text">
+                    <p>Computer Science graduate, currently pursuing my Master's at the Technical University of Munich. I love playing with numbers and algorithms&mdash;getting an idea, making a plan, and then diving in deep.</p>
+                    <p>Use the navigation above to read more about me, browse my projects, check my education and work experience, or get in touch.</p>
+                </div>
+            </section>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2026 My Personal Website</p>
-    </footer>
+    <script src="wave.js" defer></script>
 </body>
 </html>

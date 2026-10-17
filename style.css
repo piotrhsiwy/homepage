@@ -1,0 +1,114 @@
+/* Shared styles for all pages — dark theme: white text on black */
+
+/* Inter (SIL Open Font License) — self-hosted latin subset, variable weight 100–900.
+   If the file is missing, the site falls back to Arial. */
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-Variable.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+.hero-photo {
+    margin: 0;
+}
+.hero-photo figcaption {
+    color: #aaa;
+    font-size: 0.85em;
+    font-style: italic;
+    margin-top: 8px;
+}
+.avatar {
+    width: 220px;
+    height: auto;
+    border-radius: 24px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.hero-text {
+    text-align: left;
+    flex: 1;
+    min-width: 260px;
+}
+nav {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+nav li {
+    list-style: none;
+}
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav li a:hover {
+    background-color: #222;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+.content section {
+    margin-bottom: 30px;
+}
+.content ul {
+    text-align: left;
+    display: inline-block;
+}
+.entry h3 {
+    margin-bottom: 4px;
+}
+.meta {
+    color: #aaa;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+a {
+    color: #6cf;
+}
+
+/* Ocean-wave text effect (see wave.js): words bob out of phase so a wave
+   travels through the text. Small amplitude to stay readable. */
+.wave-word {
+    display: inline-block;
+    animation: wave 3s ease-in-out infinite;
+}
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .wave-word { animation: none; }
+}
+
